@@ -22,7 +22,7 @@ This project is a Gym Membership Management System implemented using Python, Fla
 
 <strong><h5>Usage</h5></strong>
 <ol>
-  <li>Access the home page by visiting the root URL (/). If you are not logged in, you will be prompted to log in or register.</li>
+  <li>Access the home page by visiting the root URL (/). If you are not logged in and try to purchase a membership, you will be prompted to log in or register.</li>
   <li>If you are a new user, click on the "Register" link to create an account. Provide a unique username and a secure password following the specified complexity requirements.</li>
   <li>If you are an existing user, click on the "Log In" link to enter your username and password.</li>
   <li>After logging in, you will see the number of days remaining in your membership, along with various membership plans you can purchase.</li>
