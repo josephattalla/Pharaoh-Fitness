@@ -1,6 +1,7 @@
 # Pharaoh Fitness
 #### Video Demo:  <URL HERE>
-#### Description:This project is a Gym Membership Management System implemented using Python, Flask, SQL, HTML, and CSS. The system allows users to register for a gym membership, purchase different membership plans, and view the remaining days of their membership.
+#### Description:
+This project is a Gym Membership Management System implemented using Python, Flask, SQL, HTML, and CSS. The system allows users to register for a gym membership, purchase different membership plans, and view the remaining days of their membership.
 
 Features
 User Registration: New users can create an account by providing a unique username and a secure password. The system ensures password complexity requirements.
