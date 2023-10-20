@@ -26,7 +26,7 @@ This project is a Gym Membership Management System implemented using Python, Fla
   <li>If you are a new user, click on the "Register" link to create an account. Provide a unique username and a secure password following the specified complexity requirements.</li>
   <li>If you are an existing user, click on the "Log In" link to enter your username and password.</li>
   <li>After logging in, you will see the number of days remaining in your membership, along with various membership plans you can purchase.</li>
-  <li>Click on the "Free 7-Day Membership", "Monthly Agreement", or "Yearly Agreement" button to purchase the corresponding membership plan. If you already have an active 7-day membership, you cannot purchase another free pass.</li>
+  <li>Click on the "Free 7-Day Membership", "Monthly Agreement", or "Yearly Agreement" button to purchase the corresponding membership plan. If you have already purchased a 7-day membership, you cannot purchase another.</li>
   <li>After purchasing a membership, the system will display the number of days remaining in your membership.</li>
   <li>Click on the "Log Out" link at the top right corner to log out of your account.</li>
 </ol>
