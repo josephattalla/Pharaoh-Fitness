@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Membership
+{% endblock %}
+
+{% block main %}
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <div class="container center gold">
+        <div class="row">
+            {% for membership_option in membership_options %}
+                <div class="col">
+                    <div id="box">
+                        {% if session["user_id"] %}
+                            <form method="post" action="/membership">
+                                <button class="gold btn" onclick="checker()" value="{{ membership_option.days }}" name="membership">
+                                    <h3><u>{{ membership_option.title }}</u></h3>
+                                </button>
+                            </form>
+                        {% else %}
+                            <a href="/login" onclick="alert('Must log-in to buy membership')">
+                                <button class="gold btn" type="submit">
+                                    <h3><u>{{ membership_option.title }}</u></h3>
+                                </button>
+                            </a>
+                        {% endif %}
+                        </br>
+                        <ul>
+                            <li>{{ membership_option.description }}</li>
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <script>
+        function checker() {
+            var result = confirm('Are you sure?');
+            if (result == false) {
+                event.preventDefault();
+            }
+        }
+    </script>
+{% endblock %}

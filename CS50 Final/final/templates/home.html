@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <div class="banner-area strokeme">
+        <h2> Pharaoh <img src="/static/anubis.png" height="150" width="150"> Fitness </h2>
+    </div>
+    <div class="content-area">
+        <h2 class="strokeme2"> Welcome to the greatest gym in the Sahara </h2>
+        <br>
+        <br>
+        {% if session["user_id"] and days_remaining > 0 %}
+            <div class="black-box">
+                <h1 class="gold">Days left on your membership: {{ days_remaining }}</h1>
+            </div>
+            </br>
+            </br>
+        {% endif %}
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/pharaoh.jpeg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/homepagegym.webp" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/basketballcourt.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <p style="color: #FFD700">
+            We provide unmatched service, innovative fitness programs and
+            wellness treatments designed to help you do your personal best
+            - through performance, endurance, restoration and well-being.
+        </p>
+
+        <h2> <a href="/membership" style="color: #FFD700;"> Start Your Journey Here </a> </h2>
+    </div>
+{% endblock %}

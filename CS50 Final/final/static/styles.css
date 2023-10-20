@@ -1,0 +1,174 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-color: #808080; /* Background color */
+    text-align: center; /* Center-align text */
+}
+
+/* Header styles */
+header {
+    height: 50px;
+    background: black;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+/* Navigation links styles */
+.nav-link {
+    color: #FFD700;
+}
+
+/* Navbar brand styles */
+.navbar-brand {
+    color: #FFD700;
+}
+
+/* Navbar brand hover styles */
+.navbar-brand:hover {
+    color: white;
+}
+
+/* Navbar item hover and active styles */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: white;
+}
+
+/* Navbar item hover styles */
+.navbar-nav .nav-item:hover {
+    color: white;
+}
+
+/* Banner area styles */
+.banner-area {
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 50px;
+    background-image: url("gym.webp");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Background box */
+#box {
+    width:400px;
+    height:400px;
+    margin:5px;
+    padding:10px;
+    background:#000;
+    border-radius: 25px;
+  }
+
+
+/* Banner area text styles */
+.banner-area h2 {
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: poppins;
+    text-transform: uppercase;
+    color: #FFD700;
+}
+
+/* Content area styles */
+.content-area {
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: #808080;
+    min-height: 1500px;
+}
+
+/* Content area heading styles */
+.content-area h2 {
+    font-family: bignoodletitling;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 30px;
+    margin: 0;
+    color: #FFD700;
+    text-transform: uppercase;
+}
+
+/* Content area paragraph styles */
+.content-area p {
+    padding: 2% 0;
+    font-family: merienda;
+    line-height: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Login form styles */
+#form_login {
+    left: 50%;
+    top: 35%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* Text stroke styles */
+.strokeme {
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.strokeme2 {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Custom Navbar styles */
+.navbar-custom {
+    background-color: #000;
+}
+
+/* Custom styles for various elements */
+
+.gold {
+    color: #FFD700;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.black-box {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Carousel styles */
+#carouselExampleInterval .carousel-inner {
+    width: 100%;
+}
+
+/* Responsive carousel width for different screen sizes */
+@media (max-width: 576px) {
+    #carouselExampleInterval .carousel-inner {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    #carouselExampleInterval .carousel-inner {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 769px) {
+    #carouselExampleInterval .carousel-inner {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
