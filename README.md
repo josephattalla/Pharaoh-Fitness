@@ -1,6 +1,6 @@
 # Pharaoh Fitness
 #### Description:
-This project is a Gym Membership Management System implemented using Python, Flask, SQL, HTML, and CSS. The system allows users to register for a gym membership, purchase different membership plans, and view the remaining days of their membership.
+This project is a gym membership management system implemented using Python, Flask, sqlite, HTML/CSS/JavaScript. The system allows users to register for a gym membership, purchase different membership plans, and view the remaining days of their membership.
 
 <strong><h5>Features</h5></strong>
 <ul>
@@ -18,14 +18,3 @@ This project is a Gym Membership Management System implemented using Python, Fla
   <li>templates/: Directory containing HTML templates for the web pages.</li>
   <li>gym.db: SQLite database file storing user information, memberships, and purchase history.</li>
 </ul>
-
-<strong><h5>Usage</h5></strong>
-<ol>
-  <li>Access the home page by visiting the root URL (/). If you are not logged in and try to purchase a membership, you will be prompted to log in or register.</li>
-  <li>If you are a new user, click on the "Register" link to create an account. Provide a unique username and a secure password following the specified complexity requirements.</li>
-  <li>If you are an existing user, click on the "Log In" link to enter your username and password.</li>
-  <li>After logging in, you will see the number of days remaining in your membership, along with various membership plans you can purchase.</li>
-  <li>Click on the "Free 7-Day Membership", "Monthly Agreement", or "Yearly Agreement" button to purchase the corresponding membership plan. If you have already purchased a 7-day membership, you cannot purchase another.</li>
-  <li>After purchasing a membership, the system will display the number of days remaining in your membership.</li>
-  <li>Click on the "Log Out" link at the top right corner to log out of your account.</li>
-</ol>
