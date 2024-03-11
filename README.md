@@ -18,3 +18,8 @@ This project is a gym membership management system implemented using Python, Fla
   <li>templates/: Directory containing HTML templates for the web pages.</li>
   <li>gym.db: SQLite database file storing user information, memberships, and purchase history.</li>
 </ul>
+
+
+
+https://github.com/josephattalla/Pharaoh-Fitness/assets/121779512/1109b967-540d-45e3-90d4-3b1312ce25ee
+
