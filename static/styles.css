@@ -1,16 +1,13 @@
-/* Reset default margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Body styles */
 body {
     background-color: #808080; /* Background color */
     text-align: center; /* Center-align text */
 }
 
-/* Header styles */
 header {
     height: 50px;
     background: black;
@@ -19,44 +16,46 @@ header {
     position: fixed;
 }
 
-/* Navigation links styles */
+a {
+    color: #FFD700
+}
+
+
+a:hover {
+    color: white
+}
+
 .nav-link {
     color: #FFD700;
 }
 
-/* Navbar brand styles */
 .navbar-brand {
     color: #FFD700;
 }
 
-/* Navbar brand hover styles */
 .navbar-brand:hover {
     color: white;
 }
 
-/* Navbar item hover and active styles */
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link {
     color: white;
 }
 
-/* Navbar item hover styles */
 .navbar-nav .nav-item:hover {
     color: white;
 }
 
-/* Banner area styles */
 .banner-area {
     width: 100%;
     height: 500px;
     position: fixed;
     top: 50px;
-    background-image: url("gym.webp");
+    background-image: url("homepagegym.webp");
     background-size: cover;
     background-position: center center;
 }
 
-/* Background box */
 #box {
     width:400px;
     height:400px;
@@ -67,7 +66,6 @@ header {
   }
 
 
-/* Banner area text styles */
 .banner-area h2 {
     padding-top: 8%;
     font-size: 70px;
@@ -76,7 +74,6 @@ header {
     color: #FFD700;
 }
 
-/* Content area styles */
 .content-area {
     width: 100%;
     position: relative;
@@ -85,7 +82,6 @@ header {
     min-height: 1500px;
 }
 
-/* Content area heading styles */
 .content-area h2 {
     font-family: bignoodletitling;
     letter-spacing: 4px;
@@ -96,7 +92,6 @@ header {
     text-transform: uppercase;
 }
 
-/* Content area paragraph styles */
 .content-area p {
     padding: 2% 0;
     font-family: merienda;
@@ -105,7 +100,6 @@ header {
     font-size: 20px;
 }
 
-/* Login form styles */
 #form_login {
     left: 50%;
     top: 35%;
@@ -113,7 +107,6 @@ header {
     transform: translate(-50%, -50%);
 }
 
-/* Text stroke styles */
 .strokeme {
     color: white;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
@@ -124,12 +117,10 @@ header {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-/* Custom Navbar styles */
 .navbar-custom {
     background-color: #000;
 }
 
-/* Custom styles for various elements */
 
 .gold {
     color: #FFD700;
@@ -146,29 +137,7 @@ header {
     border-radius: 5px;
 }
 
-/* Carousel styles */
-#carouselExampleInterval .carousel-inner {
-    width: 100%;
-}
 
-/* Responsive carousel width for different screen sizes */
-@media (max-width: 576px) {
-    #carouselExampleInterval .carousel-inner {
-        width: 80%;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-    #carouselExampleInterval .carousel-inner {
-        width: 70%;
-        margin: 0 auto;
-    }
-}
-
-@media (min-width: 769px) {
-    #carouselExampleInterval .carousel-inner {
-        width: 50%;
-        margin: 0 auto;
-    }
+.btn:hover {
+    color: white
 }
