@@ -76,7 +76,7 @@ def membership():
                 date_str = "+{} day".format(membershipType)
                 execute("UPDATE users SET membership = DATE('now', ?) WHERE id = ?", (date_str, session["user_id"]))
                 flash("Purchase successful!")
-                return render_template("membership.html")
+                return render_template("membership.html", membership_options=membership_options)
 
         
             current_membership_date = datetime.strptime(str(current_membership_date), "%Y-%m-%d")
